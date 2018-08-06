@@ -1,0 +1,17 @@
+$TTL 86400
+@	IN	SOA	server.raspserver.int. root.raspserver.int. (
+		2017122901	;Serial
+		3600		;Refresh
+		1800		;Retry
+		604800		;Expire
+		86400		;Minimum TTL
+)
+
+	IN	NS	server.raspserver.int.
+	IN	A	192.168.1.1
+	IN	MX 10	server.raspserver.int.
+
+
+server	IN	A	192.168.1.1
+cliente	IN	A	192.168.1.10
+printer	IN	A	192.168.1.15

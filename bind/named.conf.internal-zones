@@ -1,0 +1,22 @@
+view "internal" {
+
+	match-clients {
+		localhost;
+		192.168.1.0/24;
+	};
+
+	zone "raspserver.int" {
+		type master;
+		file "/etc/bind/raspserver.int.lan";
+		allow-update { none; };
+	};
+
+	zone "1.168.192.in-addr.arpa" {
+		type master;
+		file "/etc/bind/1.168.192.db";
+		allow-update { none; };
+	};
+
+	include "/etc/bind/named.conf.default-zones";
+
+};

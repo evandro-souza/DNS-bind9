@@ -1,0 +1,17 @@
+$TTL 86400
+@	IN	SOA	server.raspserver.int. root.raspserver.int. (
+		2017122901	;Serial
+		3600		;Refresh
+		1800		;Retry
+		604800		;Expire
+		86400		;Minimum TTL
+)
+
+	IN	NS	server.raspserver.int.
+	IN	PTR	raspserver.int.
+	IN	A	255.255.255.0
+
+
+1	IN	PTR	server.raspserver.int.
+10	IN	PTR	cliente.raspserver.int.
+15	IN	PTR	printer.raspserver.int.
